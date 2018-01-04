@@ -1,0 +1,27 @@
+.Main-textArea {
+	.text-area();
+}
+
+.widthtext {
+	width: 80%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.Main-textArea {
+		width: 90%;
+	
+		&--order1 {
+			display: flex;
+			order: 2;
+		}
+	}
+
+	.textreverse {
+		order: 1;
+	}
+
+	.widthtext {
+		width: 60%;
+		height: 98%;
+	}
+}

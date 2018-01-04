@@ -1,0 +1,50 @@
+@import "modules/Header";
+
+.Header	{
+	display: flex;
+	width: 100%;
+	margin-top: 15px;
+	justify-content: center;
+	align-items: center;
+
+	&-block {
+		.flex-wrap;
+		width: 100%;
+		height: 300px;
+		justify-content: space-around;
+		background-color: @header-background;
+		align-items: center;
+		border: 1px solid black;
+		.margin-side();
+	}
+
+	&-blockItems {
+		width: 200px;
+		height: 120px;
+		background-color: @header-items-background;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.Header {
+		width: 410px;
+		margin-top: 15px;
+
+		&-block {
+			flex-direction: column;
+			width: 98%;
+			height:	1300px;
+			/*align-items: center;*/
+			justify-content: space-around;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			flex-wrap: nowrap;
+		}
+
+		&-blockItems {
+			width: 90%;
+			height: 120px;
+		}
+	}
+}
+
